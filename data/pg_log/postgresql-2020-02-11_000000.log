@@ -1,0 +1,18 @@
+2020-02-11 02:27:25 EST ERROR:  invalid input syntax for integer: "esh" at character 56
+2020-02-11 02:27:25 EST STATEMENT:  INSERT INTO items (user_id, name, description) VALUES ('esh', 'Elanor Shellstrop', 'abc') RETURNING items.id
+2020-02-11 02:29:42 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 03:38:26 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 04:07:11 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 04:21:41 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 04:25:38 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 04:27:48 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 04:33:19 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-11 04:42:49 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

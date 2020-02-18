@@ -1,0 +1,40 @@
+2020-02-05 17:43:58 EST ERROR:  table "alembic_version" does not exist
+2020-02-05 17:43:58 EST STATEMENT:  drop table alembic_version;
+2020-02-05 21:05:28 EST ERROR:  duplicate key value violates unique constraint "users_username_key"
+2020-02-05 21:05:28 EST DETAIL:  Key (username)=(vi) already exists.
+2020-02-05 21:05:28 EST STATEMENT:  INSERT INTO users (name, username, password) VALUES ('Vasundhra', 'vi', 'abc') RETURNING users.id
+2020-02-05 21:09:12 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:10:11 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:12:18 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:13:59 EST ERROR:  invalid input syntax for integer: "user_id" at character 162
+2020-02-05 21:13:59 EST STATEMENT:  SELECT items.id AS items_id, items.user_id AS items_user_id, items.name AS items_name, items.description AS items_description 
+	FROM items 
+	WHERE items.user_id = 'user_id'
+2020-02-05 21:14:33 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:14:39 EST ERROR:  invalid input syntax for integer: "userid" at character 162
+2020-02-05 21:14:39 EST STATEMENT:  SELECT items.id AS items_id, items.user_id AS items_user_id, items.name AS items_name, items.description AS items_description 
+	FROM items 
+	WHERE items.user_id = 'userid'
+2020-02-05 21:15:18 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:15:37 EST ERROR:  invalid input syntax for integer: "userid" at character 162
+2020-02-05 21:15:37 EST STATEMENT:  SELECT items.id AS items_id, items.user_id AS items_user_id, items.name AS items_name, items.description AS items_description 
+	FROM items 
+	WHERE items.user_id = 'userid'
+2020-02-05 21:16:35 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:16:35 EST LOG:  unexpected EOF on client connection with an open transaction
+2020-02-05 21:22:18 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:22:57 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:24:09 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-05 21:27:05 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2020-02-06 17:07:21 EST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

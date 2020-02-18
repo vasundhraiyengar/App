@@ -1,0 +1,11 @@
+2020-02-04 22:02:24 EST LOG:  database system was shut down at 2020-02-04 22:00:56 EST
+2020-02-04 22:02:24 EST LOG:  MultiXact member wraparound protections are now enabled
+2020-02-04 22:02:24 EST LOG:  database system is ready to accept connections
+2020-02-04 22:02:24 EST LOG:  autovacuum launcher started
+2020-02-04 22:03:34 EST LOG:  received fast shutdown request
+2020-02-04 22:03:34 EST LOG:  aborting any active transactions
+2020-02-04 22:03:34 EST LOG:  autovacuum launcher shutting down
+2020-02-04 22:03:34 EST ERROR:  canceling statement due to user request
+2020-02-04 22:03:34 EST LOG:  autovacuum launcher shutting down
+2020-02-04 22:03:34 EST LOG:  shutting down
+2020-02-04 22:03:34 EST LOG:  database system is shut down
