@@ -1,0 +1,16 @@
+<h3>Edit Task</h3>
+<div>
+  <form>
+      <div>
+        <label for="item_name">Task Name:</label>
+        <input type="text" [(ngModel)]="item_name" name="item_name" value= {{item.name}} required>
+      </div>
+
+      <div>
+        <label for="item_description">Task Description:</label>
+        <input type="text" [(ngModel)]="item_description" name="item_description" value= {{item.description}} required>
+      </div>
+
+      <button (click)="edit_item()">Submit</button>
+  </form>
+</div>

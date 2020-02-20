@@ -1,0 +1,29 @@
+<h3>List of Tasks:</h3>
+<button type="button" (click)="additem = !additem">+ Add Task</button>
+<button type="button" (click)="duplicate()">+ Duplicate all Tasks</button>
+<div [hidden]="!additem">
+  <form>
+      <div>
+        <label for="item_name">Task Name:</label>
+        <input type="text" [(ngModel)]="item_name" name="item_name" required>
+      </div>
+
+      <div>
+        <label for="item_description">Task Description:</label>
+        <input type="text" [(ngModel)]="item_description" name="item_description" required>
+      </div>
+      <button (click)="add_item()">Submit</button>
+  </form>
+</div>
+<div *ngFor='let item of items'>
+  <input type='checkbox' (change)=delete(item.id)><button type="button" (click)="hide_des[item.id] = !hide_des[item.id]">{{item.name}}</button>
+  <button type="button" routerLink="/edit/{{item.id}}">Edit Item</button>
+  <div [hidden]="!hide_des[item.id]">
+    <p>Task Description: {{item.description}}</p>
+  </div>
+</div>
+
+
+
+
+<!-- <app-hero-search></app-hero-search> -->

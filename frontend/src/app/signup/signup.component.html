@@ -1,0 +1,19 @@
+<form>
+  <div>
+    <label for="name">FullName</label>
+    <input type="text" [(ngModel)]="name" name="name" required>
+  </div>
+
+  <div>
+    <label for="name">Username</label>
+    <input type="text" [(ngModel)]="username" name="name" required>
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input type="password" [(ngModel)]="password" class="form-control" name="password" required>
+  </div>
+
+  <button (click)="add_user()">Submit</button>
+
+</form>
