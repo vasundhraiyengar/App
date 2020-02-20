@@ -8,22 +8,22 @@ export class ItemService {
   }
 
   // GET id of user
-  get_id_by_name(username) {
+  getIdByName(username) {
     return this.http
       .get('/api/get/userid/'+username)
   }
 
-  get_items_by_id(id) {
+  getItemsById(id) {
     return this.http
       .get('/api/get/'+id)
   }
 
-  delete_item_by_id(id) {
+  deleteItemById(id) {
     return this.http
       .get('/api/delete/item/'+id)
   }
 
-  add_item(name, user_id, description) {
+  addItem(name, user_id, description) {
     return this.http
       .post('/api/add/item', {
         "name": name,
@@ -32,7 +32,7 @@ export class ItemService {
       })
   }
 
-  add_user(name, username, password) {
+  addUser(name, username, password) {
     return this.http
       .post('/api/add/user', {
         "name": name,
@@ -41,7 +41,7 @@ export class ItemService {
       })
   }
 
-  edit_item(id, name, description) {
+  editItem(id, name, description) {
     return this.http
       .post('/api/edit/item', {
         "id": id,
@@ -50,12 +50,12 @@ export class ItemService {
       })
   }
 
-  get_item_details(id) {
+  getItemDetails(id) {
     return this.http
       .get('/api/get/item/'+id)
   }
 
-  duplicate_items(id) {
+  duplicateItems(id) {
     return this.http
       .post('/api/duplicate/items', {
         "id":id

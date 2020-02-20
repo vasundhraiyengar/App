@@ -4,21 +4,21 @@
 <div [hidden]="!additem">
   <form>
       <div>
-        <label for="item_name">Task Name:</label>
-        <input type="text" [(ngModel)]="item_name" name="item_name" required>
+        <label for="itemName">Task Name:</label>
+        <input type="text" [(ngModel)]="itemName" name="itemName" required>
       </div>
 
       <div>
-        <label for="item_description">Task Description:</label>
-        <input type="text" [(ngModel)]="item_description" name="item_description" required>
+        <label for="itemDescription">Task Description:</label>
+        <input type="text" [(ngModel)]="itemDescription" name="itemDescription" required>
       </div>
-      <button (click)="add_item()">Submit</button>
+      <button (click)="addItem()">Submit</button>
   </form>
 </div>
 <div *ngFor='let item of items'>
-  <input type='checkbox' (change)=delete(item.id)><button type="button" (click)="hide_des[item.id] = !hide_des[item.id]">{{item.name}}</button>
+  <input type='checkbox' (change)=delete(item.id)><button type="button" (click)="hideDes[item.id] = !hideDes[item.id]">{{item.name}}</button>
   <button type="button" routerLink="/edit/{{item.id}}">Edit Item</button>
-  <div [hidden]="!hide_des[item.id]">
+  <div [hidden]="!hideDes[item.id]">
     <p>Task Description: {{item.description}}</p>
   </div>
 </div>

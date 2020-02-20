@@ -1,4 +1,4 @@
-import {ItemService} from '../item.service';
+import {UserService} from '../user.service';
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
@@ -13,14 +13,14 @@ export class LoginComponent implements OnInit {
   username;
   password;
 
-  constructor(private itemService: ItemService, private router: Router) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit() {
 
   }
 
   login() {
-    this.itemService.get_id_by_name(this.username).subscribe(
+    this.userService.getIdByName(this.username).subscribe(
       response => {
         this.user = response;
         if (this.password == this.user.password){
